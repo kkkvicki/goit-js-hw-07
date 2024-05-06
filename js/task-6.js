@@ -17,6 +17,8 @@ function createBoxes() {
   clearBoxes();
 
   let size = 30;
+  const fragment = document.createDocumentFragment();
+
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.style.width = `${size}px`;
@@ -26,6 +28,7 @@ function createBoxes() {
     size += 10;
   }
   input.value = "";
+  boxesContainer.appendChild(fragment);
 }
 
 function destroyBoxes() {
@@ -34,9 +37,7 @@ function destroyBoxes() {
 }
 
 function clearBoxes() {
-  while (boxesContainer.firstChild) {
-    boxesContainer.removeChild(boxesContainer.firstChild);
-  }
+  boxesContainer.innerHTML = "";
 }
 
 function getRandomHexColor() {
