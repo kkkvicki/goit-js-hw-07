@@ -27,8 +27,8 @@ const images = [
 
 const fragment = document.createDocumentFragment();
 const galleryList = document.querySelector(".gallery");
-i;
-mages.forEach((image) => {
+
+images.forEach((image) => {
   const createdElement = document.createElement("li");
   createdElement.classList.add("gallery-item");
 
