@@ -78,15 +78,12 @@ input {
 }
 
 #boxes {
-  max-width: 1200px;
-  min-width: 466px;
   padding: 32px 10px;
   background-color: #f6f6fe;
   display: flex;
   flex-wrap: wrap;
   border-radius: 8px;
   gap: 44px;
-  margin-top: 16px;
-  justify-content: center;
   margin: 16px auto;
+  justify-content: center;
 }
